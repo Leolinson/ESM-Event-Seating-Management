@@ -1,0 +1,1 @@
+This is a program to Calculate the least number of Tables required for a given number of groups. The maximum capacity of a taable is 8. There are group sizes from 2-6. The seating arrangement should be ni a way so there should be less vacant spaces and the peoples in the same groups shouldnt be split amoung differnt tables.
