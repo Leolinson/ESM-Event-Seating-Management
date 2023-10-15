@@ -23,7 +23,7 @@ public class input
             
 //At last we print out all the information we recived for example the number of groups and the sizes of the groups, we print this using the for loop function//
             System.out.println("The number of groups and size of the groups");
-
+  
             for(int i = 0; i < numgroups; i++)
             {
                 System.out.println("Group  "+(i+1)+":  "  +groupsize[i]+ " Peoples");

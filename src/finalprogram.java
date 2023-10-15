@@ -64,8 +64,34 @@ public class finalprogram {
         
                 }
 // The total number of tables needed is calculated and is printed out
-                System.out.println("\nTABLES NEEDED: " + tablesneeded);
+                System.out.println("\n                                    TABLES NEEDED: " + tablesneeded);
                  
+
+// Display seating arrangement
+System.out.println("\nSeating Arrangement per Table:");
+for (int i = 0; i < tablesneeded; i++)
+{
+    System.out.println("\n\nTable " + (i + 1) + ":");
+    int remainingseats = 8;
+    
+    for (int j = 0; j < groupsize.length; j++)
+    {
+        int groupSize = groupsize[j];
+        
+        if (groupSize <= remainingseats)
+        {
+            System.out.println("  Group " + (j + 1) + ": " + groupSize + " guests");
+            remainingseats -= groupSize;
+            groupsize[j] = 0;
+        }
+    }
+    
+    System.out.println("  Empty Seats: " + remainingseats);
+}
+
+                
+            
+        
         
         
                 return;
